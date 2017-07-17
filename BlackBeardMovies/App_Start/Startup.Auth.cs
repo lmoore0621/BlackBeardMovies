@@ -54,9 +54,9 @@ namespace BlackBeardMovies
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "213610099137439",
+               appSecret: "036b0abab257222b6623793645c7a7bb");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

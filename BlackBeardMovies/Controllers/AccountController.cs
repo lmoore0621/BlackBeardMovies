@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using BlackBeardMovies.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace BlackBeardMovies.Controllers
 {
@@ -149,6 +150,7 @@ namespace BlackBeardMovies.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+            
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
